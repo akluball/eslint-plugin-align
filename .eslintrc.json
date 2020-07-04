@@ -1,0 +1,60 @@
+{
+    "root": true,
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 2020
+    },
+    "env": {
+        "node": true
+    },
+    "rules": {
+        "array-callback-return": [ "error", { "checkForEach": true } ],
+        "curly": [ "error", "all" ],
+        "dot-location": [ "error", "property" ],
+        "eqeqeq": [ "error", "always" ],
+        "no-magic-numbers": [ "error", {
+            "ignoreArrayIndexes": true
+        } ],
+        "no-return-assign": [ "error" ],
+        "no-return-await": [ "error" ],
+        "prefer-regex-literals": [ "error" ],
+        "no-undefined": [ "error" ],
+        "array-bracket-newline": [ "error", "consistent" ],
+        "array-bracket-spacing": [ "error", "always" ],
+        "block-spacing": [ "error" ],
+        "brace-style": [ "error", "1tbs" ],
+        "indent": [ "error", 4, {
+            "SwitchCase": 1,
+            "VariableDeclarator": "first",
+            "MemberExpression": "off",
+            "FunctionDeclaration": { "parameters": "first" },
+            "FunctionExpression": { "parameters": "first" },
+            "CallExpression": { "arguments": "first" },
+            "ArrayExpression": "first",
+            "ObjectExpression": "first"
+        } ],
+        "key-spacing": [ "error" , { "align": "value" } ],
+        "keyword-spacing": [ "error" ],
+        "linebreak-style": [ "error", "unix" ],
+        "new-parens": [ "error", "always" ],
+        "no-lonely-if": [ "error" ],
+        "no-trailing-spaces": [ "error" ],
+        "no-unneeded-ternary": [ "error" ],
+        "no-whitespace-before-property": [ "error" ],
+        "object-curly-newline": [ "error", { "consistent": true } ],
+        "object-curly-spacing": [ "error", "always" ],
+        "one-var-declaration-per-line": [ "error" ],
+        "operator-assignment": [ "error", "always" ],
+        "operator-linebreak": [ "error", "before" ],
+        "prefer-exponentiation-operator": "error",
+        "quote-props": [ "error", "consistent-as-needed" ],
+        "quotes": [ "error", "single" ],
+        "semi": [ "error" ],
+        "semi-style": [ "error" ],
+        "space-infix-ops": [ "error" ],
+        "arrow-body-style": [ "error", "as-needed" ],
+        "arrow-parens": [ "error", "as-needed" ],
+        "no-var": "error",
+        "prefer-const": [ "error", { "destructuring": "all" } ]
+    }
+}

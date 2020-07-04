@@ -1,0 +1,27 @@
+{
+  "name": "eslint-plugin-align",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "node Makefile.js clean",
+    "lint": "node Makefile.js lint --",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "node Makefile.js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akluball/eslint-plugin-align.git"
+  },
+  "keywords": [],
+  "author": "Adam Kluball",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/akluball/eslint-plugin-align/issues"
+  },
+  "homepage": "https://github.com/akluball/eslint-plugin-align#readme",
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "mocha": "^8.0.1",
+    "shelljs": "^0.8.4"
+  }
+}

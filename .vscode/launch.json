@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "test launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "test"
+            ]
+        }
+    ]
+}
