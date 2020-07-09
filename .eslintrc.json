@@ -13,7 +13,8 @@
         "dot-location": [ "error", "property" ],
         "eqeqeq": [ "error", "always" ],
         "no-magic-numbers": [ "error", {
-            "ignoreArrayIndexes": true
+            "ignoreArrayIndexes": true,
+            "ignore": [ 0, 1 ]
         } ],
         "no-return-assign": [ "error" ],
         "no-return-await": [ "error" ],
@@ -33,7 +34,7 @@
             "ArrayExpression": "first",
             "ObjectExpression": "first"
         } ],
-        "key-spacing": [ "error" , { "align": "value" } ],
+        "key-spacing": [ "error" ],
         "keyword-spacing": [ "error" ],
         "linebreak-style": [ "error", "unix" ],
         "new-parens": [ "error", "always" ],

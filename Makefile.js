@@ -3,10 +3,8 @@ require('shelljs/make');
 
 const path = require('path');
 
-const projectRoot = process.env.INIT_CWD;
-
 function resolve(...components) {
-    return path.resolve(projectRoot, ...components);
+    return path.resolve(__dirname, ...components);
 }
 
 function resolveNodeModuleBinary(binary) {
@@ -27,11 +25,16 @@ if (process.env.TRAVIS !== 'true') {
 }
 
 target.clean = function() {
-    rm('-r', resolve('node_modules'));
+    rm('-rf', resolve('node_modules'));
 };
 
 target.lint = function(options) {
     exec(`${eslint} ${eslintOpts.concat(options).join(' ')} ${lib} ${tests} ${makefile}`);
+};
+
+target.prepublish = function() {
+    target.lint();
+    target.test();
 };
 
 target.test = function() {
